@@ -1,0 +1,19 @@
+/* 
+  InfoPlist.strings
+  KaadasLock
+
+  Created by zhaona on 2019/4/1.
+  Copyright © 2019年 com.Kaadas. All rights reserved.
+*/
+
+CFBundleDisplayName = "Kaadas";
+
+//NSLocationAlwaysUsageDescription = "Your location information is used to set up automatic unlock";
+
+NSPhotoLibraryUsageDescription = "Your photo library is only used to show photos and let you select one to profile portrait";
+
+NSCameraUsageDescription = "Your camera is only used to take a photo to profile portrait";
+
+NSMicrophoneUsageDescription = "Use microphone to communicate with others";
+
+NSPhotoLibraryAddUsageDescription = "We need to use photo library to save the photo";

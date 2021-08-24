@@ -1,0 +1,18 @@
+/* 
+  InfoPlist.strings
+  KaadasLock
+
+  Created by zhaona on 2019/4/1.
+  Copyright © 2019年 com.Kaadas. All rights reserved.
+*/
+CFBundleDisplayName = "凱迪仕智能";
+
+//NSLocationAlwaysUsageDescription = "Your location information is used to set up automatic unlock";
+
+NSPhotoLibraryUsageDescription = "當您設置頭像時，APP需要您的同意才能訪問相冊，我們僅展示相冊中的圖片，然後您可以選擇一張圖片作為頭像";
+
+NSCameraUsageDescription = "當您設置頭像時，我們僅使用相機使您可以拍攝一張照片并將其設置為頭像";
+
+NSMicrophoneUsageDescription = "使用麥克風進行通話";
+
+NSPhotoLibraryAddUsageDescription = "我們需要使用相冊保存圖片";

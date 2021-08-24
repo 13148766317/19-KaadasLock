@@ -1,0 +1,147 @@
+//
+//  PrefixHeader.pch
+//  KaadasLock
+//
+//  Created by wzr on 2019/1/15.
+//  Copyright © 2019 com.Kaadas. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+#pragma mark - 常用的宏定义头文件
+#import "KDSCommon.h"
+#import "Masonry.h"
+#import "KDSLockOptions.h"
+#import "MBProgressHUD+MJ.h"
+#import "MJRefresh.h"
+#import "SafeObject.h"
+
+//添加日志
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import <KDSToolkit/KDSToolkit.h>
+#ifdef DEBUG
+#define ddLogLevel DDLogLevelVerbose
+#else
+// RELEASE 版本禁用日志输出
+#define ddLogLevel DDLogLevelVerbose
+#endif
+//应用内切换语言
+#define Localized(key)  [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:AppLanguage]] ofType:@"lproj"]] localizedStringForKey:(key) value:nil table:@"Localizable"] ?: [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"en" ofType:@"lproj"]] localizedStringForKey:(key) value:nil table:@"Localizable"]
+
+#pragma mark - log开关
+
+#ifdef  DEBUG
+//#define KDSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define KDSLog(FORMAT, ...) DDLogInfo(FORMAT, ##__VA_ARGS__);
+//#define NSLog(...) 
+
+#else
+#define NSLog(...)
+#define KDSLog(FORMAT, ...) DDLogInfo(FORMAT, ##__VA_ARGS__);
+#endif
+
+#pragma mark - 版本判断
+#define IOS11_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.0)
+#define IOS10_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0)
+#define IOS9_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0)
+#define IOS8_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+#define IOS7_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+
+#define kIs_iphone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define kIs_iPhoneX kScreenWidth >=375.0f && kScreenHeight >=812.0f&& kIs_iphone
+///状态栏高度
+#define kStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
+///导航栏高度
+#define kNavBarHeight 44.0
+///屏幕宽(竖屏)
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+///屏幕高(竖屏)
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+///TabBar高度
+#define kTabBarHeight (CGFloat)(kIs_iPhoneX?(49.0 + 34.0):(49.0))
+///底部安全区域远离高度
+#define kBottomSafeHeight (CGFloat)(kIs_iPhoneX?(34.0):(0))
+
+#define KDSRGBColor(r, g, b)        [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+
+#define isFullScreeniPhone                   [[KDSTool getIphoneType] containsString:@"iPhone X"]
+
+#define KDSWeakSelf(type)           __weak typeof(type) weak##type = type;
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+/*ShareSDK相关*/
+#define shareSDKAppKey                @"1df32e19ef29c"
+/*新浪*/
+#define shareSDKXLAppID               @"300712132"
+#define shareSDKXLAppSecret           @"77b4dbb4b2b1ce86a87b7d6ba8d32ac4"
+/*微信*/
+//#define shareSDKWXAppID               @"wx37f575e4afb5ec50"
+//#define shareSDKWXAppSecret           @"3e330f3497bd6384e5cf0d0413edcd6c"
+#define shareSDKWXAppID               @"wxaa2df1f344ba0755"
+//支付宝支付结果通知
+#define ALI_PAY_RESULT_NOTIFICATION   @"ALI_PAY_RESULT_NOTIFICATION"
+//微信支付结果通知
+#define WECHAT_PAY_RESULT_NOTOFOCATION  @"WECHAT_PAY_RESULT_NOTOFOCATION"
+/*腾讯开放平台URL schema：QQ41EB4B69*/
+#define shareSDKQQAppID              @"1105939305"
+#define shareSDKQQAppKEY             @"3Wg3Fq1icIV7IwKd"
+
+#import "KDSTool.h"
+#import "KDSUserManager.h"
+#import "KDSNetWorkURLPort.h"
+
+/*-------中软云------*/
+//三方库
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import <MJExtension/MJExtension.h>
+#import <UIImageView+WebCache.h>
+#import <SDImageCache.h>
+#import <YBIBWebImageManager.h>
+#import <WXApi.h>
+//#import <AlipaySDK/AlipaySDK.h>
+//#import <JPUSHService.h>
+////定位
+//#import <BMKLocationKit/BMKLocationComponent.h>
+////地图
+//#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+//#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+//
+
+//自定义文件
+//#import "AFNetworking.h"
+#import "AFNetworking-umbrella.h"
+#define userDefaults    [NSUserDefaults standardUserDefaults]
+ 
+
+#pragma mark - Weak Object
+
+#define ESWeak(var, weakVar) __weak __typeof(&*var) weakVar = var
+#define ESStrong_DoNotCheckNil(weakVar, _var) __typeof(&*weakVar) _var = weakVar
+#define ESStrong(weakVar, _var) ESStrong_DoNotCheckNil(weakVar, _var); if (!_var) return;
+
+#define ESWeak_(var) ESWeak(var, weak_##var);
+#define ESStrong_(var) ESStrong(weak_##var, _##var);
+
+/** defines a weak `self` named `__weakSelf` */
+#define ESWeakSelf      ESWeak(self, __weakSelf);
+/** defines a strong `self` named `_self` from `__weakSelf` */
+#define ESStrongSelf    ESStrong(__weakSelf, _self);
+
+
+#ifndef dispatch_main_async_safe
+#define dispatch_main_async_safe(block)\
+    if (dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL) == dispatch_queue_get_label(dispatch_get_main_queue())) {\
+        block();\
+    } else {\
+        dispatch_async(dispatch_get_main_queue(), block);\
+    }
+#endif
+
+#endif /* __OBJC__ */
+#endif /* PrefixHeader_pch */
+

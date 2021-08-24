@@ -1,0 +1,34 @@
+/* 
+  InfoPlist.strings
+  KaadasLock
+
+  Created by zhaona on 2019/4/1.
+  Copyright © 2019年 com.Kaadas. All rights reserved.
+*/
+
+/* 方案一暂时不做国际化，如果需要的话替换即可
+CFBundleDisplayName = "Kaadas";
+
+//NSLocationAlwaysUsageDescription = "Your location information is used to set up automatic unlock";
+
+NSPhotoLibraryUsageDescription = "Your photo library is only used to show photos and let you select one to profile portrait";
+
+NSCameraUsageDescription = "Your camera is only used to take a photo to profile portrait";
+
+NSMicrophoneUsageDescription = "Use microphone to communicate with others";
+
+NSPhotoLibraryAddUsageDescription = "We need to use photo library to save the photo";
+*/
+
+//方案二
+CFBundleDisplayName = "凯迪仕智能";
+
+//NSLocationAlwaysUsageDescription = "Your location information is used to set up automatic unlock";
+
+NSPhotoLibraryUsageDescription = "当您设置头像时，APP需要你的同意才能访问相册，我们仅展示相册中的图片，然后您可以选择一张图片作为头像";
+
+NSCameraUsageDescription = "当您设置头像时，我们仅使用相机使您可以拍摄一张照片并将其设置为头像";
+
+NSMicrophoneUsageDescription = "使用麦克风进行通话";
+
+NSPhotoLibraryAddUsageDescription = "我们需要使用相册保存图片";

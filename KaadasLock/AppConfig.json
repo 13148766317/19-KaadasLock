@@ -1,0 +1,64 @@
+{
+    "protocolVer": "1",
+    "dataVer": "2022061601",
+    "encrypted": 0,
+    "encryptedData": "encryptedData",
+    "data": {
+        "server": {
+            "Debug": {
+                "httpServer": "https://test.juziwulian.com:8090/",
+                "mqttServer": "test.juziwulian.com",
+                "sipServer": "test.juziwulian.com",
+                "otaHost" : "https://test.juziwulian.com:8090/ota/checkUpgrade",
+                "otaHostmu" : "https://test.juziwulian.com:8090/ota/multiCheckUpgrade",
+                "otaResults" : "https://test.juziwulian.com:8090/ota/btResultAdd"
+            },
+            "Release": {
+                "httpServer": "https://app.kaadas.com:34000/",
+                "mqttServer": "mqtt-kaadas.juziwulian.com",
+                "sipServer": "sip-kaadas.juziwulian.com",
+                "otaHost" : "https://app.kaadas.com:34000/ota/checkUpgrade",
+                "otaHostmu" : "https://app.kaadas.com:34000/ota/multiCheckUpgrade",
+                "otaResults" : "https://app.kaadas.com:34000/ota/btResultAdd"
+            }
+        },
+        "settingRows": [
+            {
+                "tag": "server",
+                "title": "配置模式",
+                "rowType": "selectorPush",
+                "selectorTitle": "配置模式",
+                "selectorOptions": [
+                    {
+                        "value": "Debug",
+                        "displayText": "Debug"
+                    },
+                    {
+                        "value": "Release",
+                        "displayText": "Release"
+                    }
+                ]
+            },
+            {
+                "tag": "enableDebug",
+                "title": "开启调试",
+                "rowType": "booleanSwitch"
+            }
+        ],
+        "settingValues": {
+            "Debug":{
+                "server": "Debug",
+                "enableDebug": 0
+            },
+            "AppStore":{
+                "server": "Release",
+                "enableDebug": 0
+            },
+            "AdHot":{
+                "server": "Release",
+                "enableDebug": 0
+            },
+        }
+    }
+}
+
