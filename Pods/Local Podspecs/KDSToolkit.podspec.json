@@ -1,0 +1,39 @@
+{
+  "name": "KDSToolkit",
+  "version": "0.2.2",
+  "summary": "KDS相关工具组件",
+  "description": "KDS相关工具组件",
+  "homepage": "http://192.168.2.250:8011/fujinqian/KDSToolkit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "alf": "fujinqian@kaadas.com"
+  },
+  "source": {
+    "git": "git@192.168.2.250:fujinqian/KDSToolkit.git",
+    "tag": "0.2.2"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "KDSToolkit/Classes/**/*",
+  "dependencies": {
+    "XLForm": [
+
+    ],
+    "CocoaLumberjack": [
+
+    ],
+    "LumberjackConsole": [
+
+    ],
+    "SSZipArchive": [
+
+    ],
+    "GBDeviceInfo": [
+
+    ]
+  }
+}

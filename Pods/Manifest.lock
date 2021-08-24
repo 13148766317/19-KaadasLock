@@ -1,0 +1,168 @@
+PODS:
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - Bugly (2.5.90)
+  - CocoaLumberjack (3.7.2):
+    - CocoaLumberjack/Core (= 3.7.2)
+  - CocoaLumberjack/Core (3.7.2)
+  - FMDB/SQLCipher (2.7.5):
+    - SQLCipher
+  - FTIndicator (1.2.9):
+    - FTIndicator/FTNotificationIndicator (= 1.2.9)
+    - FTIndicator/FTProgressIndicator (= 1.2.9)
+    - FTIndicator/FTToastIndicator (= 1.2.9)
+  - FTIndicator/FTNotificationIndicator (1.2.9)
+  - FTIndicator/FTProgressIndicator (1.2.9)
+  - FTIndicator/FTToastIndicator (1.2.9)
+  - GBDeviceInfo (6.6.0):
+    - GBDeviceInfo/Core (= 6.6.0)
+  - GBDeviceInfo/Core (6.6.0)
+  - IQKeyboardManager (6.5.6)
+  - KDSToolkit (0.2.2):
+    - CocoaLumberjack
+    - GBDeviceInfo
+    - LumberjackConsole
+    - SSZipArchive
+    - XLForm
+  - LumberjackConsole (3.6.2):
+    - CocoaLumberjack (>= 3.x)
+    - NBUCore (>= 2.1.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJExtension (3.2.4)
+  - MJRefresh (3.6.1)
+  - MQTTClient (0.15.3):
+    - MQTTClient/Core (= 0.15.3)
+  - MQTTClient/Core (0.15.3):
+    - MQTTClient/Manager
+    - MQTTClient/Min
+  - MQTTClient/Manager (0.15.3):
+    - MQTTClient/Min
+  - MQTTClient/Min (0.15.3)
+  - NBUCore (2.1.0)
+  - ReactiveObjC (3.1.1)
+  - SAMKeychain (1.5.3)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - SQLCipher (4.4.3):
+    - SQLCipher/standard (= 4.4.3)
+  - SQLCipher/common (4.4.3)
+  - SQLCipher/standard (4.4.3):
+    - SQLCipher/common
+  - SSZipArchive (2.2.3)
+  - ti_oad (1.0.1)
+  - WeChatSDKPods (1.6.1):
+    - WeChatSDKPods/precompiled (= 1.6.1)
+  - WeChatSDKPods/precompiled (1.6.1)
+  - XLForm (4.3.0)
+  - YBImageBrowser (2.1.7):
+    - SDWebImage (~> 5.0.0)
+    - YYImage
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+
+DEPENDENCIES:
+  - "AFNetworking/NSURLSession (from `git@192.168.2.250:zhushiqi/AFNetworking.git`)"
+  - "AFNetworking/Reachability (from `git@192.168.2.250:zhushiqi/AFNetworking.git`)"
+  - "AFNetworking/Security (from `git@192.168.2.250:zhushiqi/AFNetworking.git`)"
+  - "AFNetworking/Serialization (from `git@192.168.2.250:zhushiqi/AFNetworking.git`)"
+  - Bugly
+  - FMDB/SQLCipher
+  - FTIndicator
+  - IQKeyboardManager
+  - "KDSToolkit (from `git@192.168.2.250:fujinqian/KDSToolkit.git`)"
+  - "LumberjackConsole (from `git@192.168.2.250:fujinqian/LumberjackConsole.git`, tag `3.6.3`)"
+  - Masonry
+  - MBProgressHUD (~> 1.1.0)
+  - MJExtension
+  - MJRefresh
+  - MQTTClient
+  - ReactiveObjC (~> 3.1.1)
+  - SAMKeychain
+  - SDWebImage (~> 5.0.1)
+  - ti_oad
+  - WeChatSDKPods (~> 1.6.1)
+  - YBImageBrowser (~> 2.1.4)
+
+SPEC REPOS:
+  trunk:
+    - Bugly
+    - CocoaLumberjack
+    - FMDB
+    - FTIndicator
+    - GBDeviceInfo
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - MQTTClient
+    - NBUCore
+    - ReactiveObjC
+    - SAMKeychain
+    - SDWebImage
+    - SQLCipher
+    - SSZipArchive
+    - ti_oad
+    - WeChatSDKPods
+    - XLForm
+    - YBImageBrowser
+    - YYImage
+
+EXTERNAL SOURCES:
+  AFNetworking:
+    :git: "git@192.168.2.250:zhushiqi/AFNetworking.git"
+  KDSToolkit:
+    :git: "git@192.168.2.250:fujinqian/KDSToolkit.git"
+  LumberjackConsole:
+    :git: "git@192.168.2.250:fujinqian/LumberjackConsole.git"
+    :tag: 3.6.3
+
+CHECKOUT OPTIONS:
+  AFNetworking:
+    :commit: 7174f7215096d000c3de167ae6ba9852db68485f
+    :git: "git@192.168.2.250:zhushiqi/AFNetworking.git"
+  KDSToolkit:
+    :commit: 1d5b3ea8d5d23bb6f2081a1fed228b95f8ae9e17
+    :git: "git@192.168.2.250:fujinqian/KDSToolkit.git"
+  LumberjackConsole:
+    :git: "git@192.168.2.250:fujinqian/LumberjackConsole.git"
+    :tag: 3.6.3
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Bugly: 88bc32c0acc6fef7b74d610f0319ee7560d6b9fe
+  CocoaLumberjack: b7e05132ff94f6ae4dfa9d5bce9141893a21d9da
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  FTIndicator: f7f071fd159e5befa1d040a9ef2e3ab53fa9322c
+  GBDeviceInfo: ed0db16230d2fa280e1cbb39a5a7f60f6946aaec
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  KDSToolkit: 6ee9bfe314d5d1642c6eacdd7d460e32ee99d2dd
+  LumberjackConsole: 5947bfa44f58c5aef5d80b31facf8cdc5eee0710
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb
+  MJRefresh: d2c1970d1cf6e77fcfcdfe76c943dfab8dbfa5c1
+  MQTTClient: 0dfa04e789479c2e461786464969895c1fcb0875
+  NBUCore: 201af50441f48513ef6d5823a5fc12c9e1f288cd
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  SQLCipher: 155ffeafc9ac102e5c9b68e3e9a1297a98a27096
+  SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
+  ti_oad: 5d364ac5b39330eef1eef12c5bc076d8930ac36a
+  WeChatSDKPods: 4d729081ddfa7c2337b954efda91d573859e7c64
+  XLForm: a439f9512078ed538e8335c8b06d3f3286bbfd37
+  YBImageBrowser: 26bb62ae7ba7fef423085d431637d16fb58a6cbd
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+
+PODFILE CHECKSUM: f8db19a2c5f8196134ea1a94aa07473931f1204f
+
+COCOAPODS: 1.10.1
