@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KDSAddGWFourVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="正在连接kaadas网关添加成功" translatesAutoresizingMaskIntoConstraints="NO" id="odO-Pr-AVy">
+                    <rect key="frame" x="137" y="116" width="101" height="73"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="73" id="PkF-b6-TGI"/>
+                        <constraint firstAttribute="width" constant="101" id="qMB-Al-ZdK"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3C-gZ-Zmu">
+                    <rect key="frame" x="15" y="342" width="345" height="75"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网关绑定成功！" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6a-yQ-BIW">
+                            <rect key="frame" x="51" y="21" width="275" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="JX3-lC-A25"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="提醒" translatesAutoresizingMaskIntoConstraints="NO" id="N5y-8B-Pfd">
+                            <rect key="frame" x="22" y="31.5" width="12" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12" id="TNU-ws-dYG"/>
+                                <constraint firstAttribute="height" constant="12" id="oxJ-6E-tjZ"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="N5y-8B-Pfd" firstAttribute="centerY" secondItem="H3C-gZ-Zmu" secondAttribute="centerY" id="Apq-Ck-ndC"/>
+                        <constraint firstAttribute="height" constant="75" id="VKB-rQ-RpO"/>
+                        <constraint firstItem="N5y-8B-Pfd" firstAttribute="leading" secondItem="H3C-gZ-Zmu" secondAttribute="leading" constant="22" id="XaC-Fm-bec"/>
+                        <constraint firstAttribute="trailing" secondItem="y6a-yQ-BIW" secondAttribute="trailing" constant="19" id="YH1-oB-VDG"/>
+                        <constraint firstItem="y6a-yQ-BIW" firstAttribute="leading" secondItem="N5y-8B-Pfd" secondAttribute="trailing" constant="17" id="hx1-Wj-qqr"/>
+                        <constraint firstItem="y6a-yQ-BIW" firstAttribute="centerY" secondItem="N5y-8B-Pfd" secondAttribute="centerY" id="iIg-ws-YAC"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWC-En-sdr">
+                    <rect key="frame" x="88" y="575" width="199" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="BTj-W5-Ifn"/>
+                    </constraints>
+                    <state key="normal" title="暂不添加了">
+                        <color key="titleColor" red="0.1215686275" green="0.58823529409999997" blue="0.96798532770000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="noAddClick:" destination="-1" eventType="touchUpInside" id="G1f-7J-M9S"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OW-YG-x2d">
+                    <rect key="frame" x="88" y="505" width="199" height="44"/>
+                    <color key="backgroundColor" red="0.1215686275" green="0.58823529409999997" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="JlH-hZ-AbS"/>
+                    </constraints>
+                    <state key="normal" title="前去添加ZigBee设备">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addZigBeeDeviceBtn:" destination="-1" eventType="touchUpInside" id="gKy-sa-tUU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="H3C-gZ-Zmu" secondAttribute="trailing" constant="15" id="0c2-hv-2p6"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="KWC-En-sdr" secondAttribute="bottom" constant="48" id="81Y-aN-v0h"/>
+                <constraint firstItem="7OW-YG-x2d" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="88" id="Go6-Bt-IMi"/>
+                <constraint firstItem="H3C-gZ-Zmu" firstAttribute="top" secondItem="odO-Pr-AVy" secondAttribute="bottom" constant="153" id="HZW-zF-sxi"/>
+                <constraint firstItem="odO-Pr-AVy" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="96" id="Jyl-pj-9Xf"/>
+                <constraint firstItem="KWC-En-sdr" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="88" id="VIu-mF-0nL"/>
+                <constraint firstItem="KWC-En-sdr" firstAttribute="top" secondItem="7OW-YG-x2d" secondAttribute="bottom" constant="26" id="Ve4-Ya-OFV"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="7OW-YG-x2d" secondAttribute="trailing" constant="88" id="bDj-FC-AYy"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="KWC-En-sdr" secondAttribute="trailing" constant="88" id="c9l-RB-YVh"/>
+                <constraint firstItem="H3C-gZ-Zmu" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="kjZ-jm-CPe"/>
+                <constraint firstItem="odO-Pr-AVy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="t89-kA-Wrt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="提醒" width="11.5" height="12"/>
+        <image name="正在连接kaadas网关添加成功" width="100.5" height="72.5"/>
+    </resources>
+</document>

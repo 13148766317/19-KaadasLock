@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KDSAddGWVCOne">
+            <connections>
+                <outlet property="howLightBtn" destination="aPJ-vX-LQb" id="EQ2-sO-CrH"/>
+                <outlet property="nextBtn" destination="nr9-j6-tkP" id="0Ul-rQ-nQd"/>
+                <outlet property="tipsLb" destination="Qwh-yg-8yb" id="rM0-np-jVE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="添加网关_添加网关1" translatesAutoresizingMaskIntoConstraints="NO" id="w2M-A6-dZf">
+                    <rect key="frame" x="94.5" y="284.5" width="186" height="98"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="186" id="Wmv-WR-uLn"/>
+                        <constraint firstAttribute="height" constant="98" id="qqt-05-6tU"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPJ-vX-LQb">
+                    <rect key="frame" x="121" y="497" width="133" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="yeu-Lr-jgE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="如何将指示灯设置常亮">
+                        <color key="titleColor" red="0.12156862745098039" green="0.58823529411764708" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="howLightBtn:" destination="-1" eventType="touchUpInside" id="c4W-A5-OSs"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网线连接路由器LAN和网关WAN，接通电源,确认指示灯常亮" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwh-yg-8yb">
+                    <rect key="frame" x="50" y="74" width="275" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="jHF-fT-wPT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nr9-j6-tkP">
+                    <rect key="frame" x="88" y="575" width="199" height="44"/>
+                    <color key="backgroundColor" red="0.12156862745098039" green="0.58823529411764708" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ZGn-3f-ziK"/>
+                    </constraints>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextStepClick:" destination="-1" eventType="touchUpInside" id="uVJ-AU-kFU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Qwh-yg-8yb" firstAttribute="leading" secondItem="AA9-v2-1lC" secondAttribute="leading" constant="50" id="4DB-iz-E9Y"/>
+                <constraint firstAttribute="trailing" secondItem="nr9-j6-tkP" secondAttribute="trailing" constant="88" id="Cro-pI-FzL"/>
+                <constraint firstItem="nr9-j6-tkP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="88" id="JcO-87-yb8"/>
+                <constraint firstItem="w2M-A6-dZf" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="MBG-Fh-1kt"/>
+                <constraint firstItem="AA9-v2-1lC" firstAttribute="bottom" secondItem="nr9-j6-tkP" secondAttribute="bottom" constant="48" id="Uhg-VW-z3g"/>
+                <constraint firstItem="w2M-A6-dZf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="e7l-Hf-t8V"/>
+                <constraint firstItem="Qwh-yg-8yb" firstAttribute="top" secondItem="AA9-v2-1lC" secondAttribute="top" constant="54" id="eg0-6e-ZBg"/>
+                <constraint firstItem="AA9-v2-1lC" firstAttribute="trailing" secondItem="Qwh-yg-8yb" secondAttribute="trailing" constant="50" id="ncs-YN-num"/>
+                <constraint firstItem="aPJ-vX-LQb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pTS-6m-87l"/>
+                <constraint firstItem="nr9-j6-tkP" firstAttribute="top" secondItem="aPJ-vX-LQb" secondAttribute="bottom" constant="50" id="sKa-5x-iQS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="AA9-v2-1lC"/>
+            <point key="canvasLocation" x="-61.600000000000001" y="52.623688155922046"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="添加网关_添加网关1" width="186" height="97.5"/>
+    </resources>
+</document>

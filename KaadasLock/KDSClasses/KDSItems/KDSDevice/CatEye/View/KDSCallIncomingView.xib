@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KDSCallIncomingView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="图层 1482" translatesAutoresizingMaskIntoConstraints="NO" id="DhI-xo-ypv">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOR-cY-d6P">
+                    <rect key="frame" x="71" y="695" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Tqw-9K-cnp"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Zmm-Xp-bc8"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="100" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="挂断" backgroundImage="Refuse_icon">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" backgroundImage="Refuse_icon"/>
+                    <connections>
+                        <action selector="cancelCall:" destination="iN0-l3-epB" eventType="touchUpInside" id="T2h-5j-F3V"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cat's eye_pic" translatesAutoresizingMaskIntoConstraints="NO" id="17X-nK-Q1z">
+                    <rect key="frame" x="160" y="184" width="94" height="94"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="9Up-sy-hb4"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cq-N6-kgE">
+                    <rect key="frame" x="283" y="695" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="DYz-hs-2Ta"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="E3p-IQ-K2O"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="100" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="接听" backgroundImage="Answer_icon">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" backgroundImage="Refuse_icon"/>
+                    <connections>
+                        <action selector="acceptCall:" destination="iN0-l3-epB" eventType="touchUpInside" id="zel-E1-JBL"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="壮壮家的猫眼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNo-yj-D8y">
+                    <rect key="frame" x="100" y="80" width="214" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="FGL-NK-s1x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DhI-xo-ypv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9qV-YW-7EA"/>
+                <constraint firstAttribute="bottom" secondItem="TOR-cY-d6P" secondAttribute="bottom" constant="107" id="ANd-Lv-6Zf"/>
+                <constraint firstItem="TOR-cY-d6P" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="71" id="AdY-m4-l76"/>
+                <constraint firstAttribute="trailing" secondItem="9cq-N6-kgE" secondAttribute="trailing" constant="71" id="BvE-b0-6rX"/>
+                <constraint firstItem="aNo-yj-D8y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="GV9-FC-wcr"/>
+                <constraint firstAttribute="bottom" secondItem="DhI-xo-ypv" secondAttribute="bottom" id="LHq-Gx-qz9"/>
+                <constraint firstItem="DhI-xo-ypv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MKN-nS-wpm"/>
+                <constraint firstAttribute="trailing" secondItem="DhI-xo-ypv" secondAttribute="trailing" id="ZVa-Ax-qbs"/>
+                <constraint firstItem="aNo-yj-D8y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="fbv-Y4-qPD"/>
+                <constraint firstItem="17X-nK-Q1z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="184" id="hec-63-9BL"/>
+                <constraint firstAttribute="bottom" secondItem="9cq-N6-kgE" secondAttribute="bottom" constant="107" id="kb9-HN-MtL"/>
+                <constraint firstItem="17X-nK-Q1z" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sDR-hv-nda"/>
+                <constraint firstAttribute="trailing" secondItem="aNo-yj-D8y" secondAttribute="trailing" constant="100" id="uRE-1C-Pdu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="catyeNameLab" destination="aNo-yj-D8y" id="jRV-6y-1jZ"/>
+            </connections>
+            <point key="canvasLocation" x="573.91304347826087" y="119.86607142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Answer_icon" width="60" height="60"/>
+        <image name="Cat's eye_pic" width="94" height="94"/>
+        <image name="Refuse_icon" width="60" height="60"/>
+        <image name="图层 1482" width="375" height="667"/>
+    </resources>
+</document>

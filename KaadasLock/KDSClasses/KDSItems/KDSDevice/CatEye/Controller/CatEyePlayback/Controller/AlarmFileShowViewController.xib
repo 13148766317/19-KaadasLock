@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlarmFileShowViewController">
+            <connections>
+                <outlet property="picImgView" destination="jfX-lr-FGK" id="gQP-yB-m4D"/>
+                <outlet property="playVideoBtn" destination="j5J-x0-YSg" id="gnv-eB-M8o"/>
+                <outlet property="reLoadBtn" destination="3yo-B8-ljx" id="xkJ-qd-vug"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAc-VV-Ef9">
+                    <rect key="frame" x="0.0" y="76" width="414" height="235"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jfX-lr-FGK">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="235"/>
+                        </imageView>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yo-B8-ljx">
+                            <rect key="frame" x="185.5" y="98" width="43.5" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="43.5" id="CsY-Da-Wec"/>
+                                <constraint firstAttribute="height" constant="39" id="USF-n1-9Y8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="80" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="重新下载" image="download_icon">
+                                <color key="titleColor" red="0.84313725490000002" green="0.8862745098" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="reloadBtnClick:" destination="-1" eventType="touchUpInside" id="j9w-kD-IQg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="3yo-B8-ljx" firstAttribute="centerY" secondItem="iAc-VV-Ef9" secondAttribute="centerY" id="Aez-Cj-hGo"/>
+                        <constraint firstItem="3yo-B8-ljx" firstAttribute="centerX" secondItem="iAc-VV-Ef9" secondAttribute="centerX" id="M7a-sD-vHY"/>
+                        <constraint firstItem="jfX-lr-FGK" firstAttribute="top" secondItem="iAc-VV-Ef9" secondAttribute="top" id="Vi3-Ma-4bk"/>
+                        <constraint firstAttribute="height" constant="235" id="ayp-ds-r8e"/>
+                        <constraint firstItem="jfX-lr-FGK" firstAttribute="leading" secondItem="iAc-VV-Ef9" secondAttribute="leading" id="fqw-dX-Ckl"/>
+                        <constraint firstAttribute="trailing" secondItem="jfX-lr-FGK" secondAttribute="trailing" id="lZP-eP-A6i"/>
+                        <constraint firstAttribute="bottom" secondItem="jfX-lr-FGK" secondAttribute="bottom" id="pdU-zS-FHc"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5J-x0-YSg">
+                    <rect key="frame" x="55" y="424" width="304" height="44"/>
+                    <color key="backgroundColor" red="0.12156862745098039" green="0.58823529411764708" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="0ro-af-hKI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="tintColor" red="0.1215686275" green="0.58823529409999997" blue="0.96798532770000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="点击查看视频">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickPlayVideo:" destination="-1" eventType="touchUpInside" id="Vsf-G9-zF9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iAc-VV-Ef9" secondAttribute="trailing" id="4Tk-ra-1QI"/>
+                <constraint firstItem="j5J-x0-YSg" firstAttribute="top" secondItem="iAc-VV-Ef9" secondAttribute="bottom" constant="113" id="9Gn-IY-qv2"/>
+                <constraint firstItem="iAc-VV-Ef9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="76" id="SqN-Nn-fFC"/>
+                <constraint firstItem="j5J-x0-YSg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="55" id="dm3-hh-9sQ"/>
+                <constraint firstAttribute="trailing" secondItem="j5J-x0-YSg" secondAttribute="trailing" constant="55" id="fXG-i2-pwz"/>
+                <constraint firstItem="iAc-VV-Ef9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hyY-CP-VV0"/>
+            </constraints>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="download_icon" width="87" height="78"/>
+    </resources>
+</document>

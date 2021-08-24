@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KDSHomeViewController">
+            <connections>
+                <outlet property="BgImageView" destination="nK0-Bf-Ghk" id="oOU-vn-Nzm"/>
+                <outlet property="addDeviceBtn" destination="dQu-9J-DXx" id="arT-om-4e4"/>
+                <outlet property="elementImageView" destination="9fv-s9-2Hh" id="8of-2k-lhS"/>
+                <outlet property="logoImageView" destination="1dN-x9-fVl" id="gPt-N2-BV6"/>
+                <outlet property="sloganLabel" destination="FYo-fV-XrR" id="c01-31-vHq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBg" translatesAutoresizingMaskIntoConstraints="NO" id="nK0-Bf-Ghk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="1dN-x9-fVl">
+                    <rect key="frame" x="113.5" y="146" width="148" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="D6X-vV-raa"/>
+                        <constraint firstAttribute="width" constant="148" id="MUi-Cl-gVI"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页元素" translatesAutoresizingMaskIntoConstraints="NO" id="9fv-s9-2Hh">
+                    <rect key="frame" x="0.0" y="251" width="375" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="mlG-XL-30U"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="守  护  您  的  家" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYo-fV-XrR">
+                    <rect key="frame" x="133.5" y="365" width="108" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Yh3-Xa-Oa4"/>
+                        <constraint firstAttribute="width" constant="108" id="oF0-5I-y3k"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQu-9J-DXx">
+                    <rect key="frame" x="55" y="420" width="265" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="PqN-uL-bM6"/>
+                    </constraints>
+                    <state key="normal" title="点击添加设备"/>
+                    <connections>
+                        <action selector="addDeviceBtn:" destination="-1" eventType="touchUpInside" id="35b-zy-BXP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="dQu-9J-DXx" secondAttribute="trailing" constant="55" id="1we-Qg-MjB"/>
+                <constraint firstItem="nK0-Bf-Ghk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ah8-sw-CR3"/>
+                <constraint firstItem="FYo-fV-XrR" firstAttribute="top" secondItem="9fv-s9-2Hh" secondAttribute="bottom" constant="60" id="Bss-FB-QRK"/>
+                <constraint firstItem="1dN-x9-fVl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JeH-eJ-d7I"/>
+                <constraint firstAttribute="trailing" secondItem="nK0-Bf-Ghk" secondAttribute="trailing" id="NID-Jt-Rt1"/>
+                <constraint firstItem="1dN-x9-fVl" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="146" id="PMS-4Q-GhJ"/>
+                <constraint firstItem="9fv-s9-2Hh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YCh-i1-qde"/>
+                <constraint firstItem="9fv-s9-2Hh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="bQG-cd-obU"/>
+                <constraint firstItem="dQu-9J-DXx" firstAttribute="top" secondItem="FYo-fV-XrR" secondAttribute="bottom" constant="34" id="brj-ba-BaB"/>
+                <constraint firstAttribute="bottom" secondItem="nK0-Bf-Ghk" secondAttribute="bottom" id="csm-fp-Uos"/>
+                <constraint firstItem="nK0-Bf-Ghk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gqq-ZD-aC6"/>
+                <constraint firstItem="9fv-s9-2Hh" firstAttribute="top" secondItem="1dN-x9-fVl" secondAttribute="bottom" constant="45" id="jYy-Wa-Ruk"/>
+                <constraint firstItem="FYo-fV-XrR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="k11-Xk-rLe"/>
+                <constraint firstItem="9fv-s9-2Hh" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="twz-zn-kdg"/>
+                <constraint firstItem="dQu-9J-DXx" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="55" id="xvT-MW-6tO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="138.40000000000001" y="147.97601199400302"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loginBg" width="750" height="1334"/>
+        <image name="首页LOGO" width="148" height="58.5"/>
+        <image name="首页元素" width="374.5" height="53.5"/>
+    </resources>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="X4O-91-jGr" customClass="PirUpdateTipView">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快照更新，请下拉刷新" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzP-my-3gb">
+                    <rect key="frame" x="0.0" y="0.0" width="314" height="79"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hV-3N-Cys">
+                    <rect key="frame" x="314" y="0.0" width="50" height="79"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="7Qu-Bz-7Tz"/>
+                    </constraints>
+                    <state key="normal" title="X">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.1215686275" green="0.58823529409999997" blue="0.96798532770000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="5hV-3N-Cys" firstAttribute="leading" secondItem="vzP-my-3gb" secondAttribute="trailing" id="3dU-d0-7Vy"/>
+                <constraint firstAttribute="trailing" secondItem="5hV-3N-Cys" secondAttribute="trailing" id="71M-da-mse"/>
+                <constraint firstItem="5hV-3N-Cys" firstAttribute="top" secondItem="X4O-91-jGr" secondAttribute="top" id="PVH-4J-WHe"/>
+                <constraint firstItem="vzP-my-3gb" firstAttribute="leading" secondItem="X4O-91-jGr" secondAttribute="leading" id="S1z-wn-Acm"/>
+                <constraint firstAttribute="bottom" secondItem="vzP-my-3gb" secondAttribute="bottom" id="eLb-80-o9J"/>
+                <constraint firstItem="vzP-my-3gb" firstAttribute="top" secondItem="X4O-91-jGr" secondAttribute="top" id="vh7-RF-NSr"/>
+                <constraint firstAttribute="bottom" secondItem="5hV-3N-Cys" secondAttribute="bottom" id="yKP-VI-3vo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="closeBtn" destination="5hV-3N-Cys" id="Fcm-e2-dS6"/>
+                <outlet property="tipLab" destination="vzP-my-3gb" id="dFT-q6-FrV"/>
+            </connections>
+            <point key="canvasLocation" x="146.37681159420291" y="349.21875"/>
+        </view>
+    </objects>
+</document>

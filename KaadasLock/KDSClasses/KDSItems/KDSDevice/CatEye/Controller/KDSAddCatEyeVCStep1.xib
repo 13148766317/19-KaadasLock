@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KDSAddCatEyeVCStep1">
+            <connections>
+                <outlet property="stepBtn" destination="MXk-n3-0fh" id="h62-Ho-rSw"/>
+                <outlet property="stepStip2Lb" destination="ILG-A0-YYh" id="6fC-4F-TjA"/>
+                <outlet property="stepTips1Lb" destination="ScY-pM-izk" id="OId-Gh-cxj"/>
+                <outlet property="stepTips3Lb" destination="dhA-1S-5tq" id="dB4-Hp-Ulx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第一步 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScY-pM-izk">
+                    <rect key="frame" x="0.0" y="51" width="375" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ytI-9a-1OQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开启猫眼 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILG-A0-YYh">
+                    <rect key="frame" x="0.0" y="82" width="375" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="lRb-Pg-XLp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拨动猫眼背后开关" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhA-1S-5tq">
+                    <rect key="frame" x="0.0" y="113" width="375" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="1Vy-M4-RF1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addCateyeStep1" translatesAutoresizingMaskIntoConstraints="NO" id="YkQ-1z-UDT">
+                    <rect key="frame" x="122.5" y="205" width="130" height="214"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="214" id="26S-RM-ZzY"/>
+                        <constraint firstAttribute="width" constant="130" id="ddS-w9-qcj"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXk-n3-0fh">
+                    <rect key="frame" x="87.5" y="575" width="200" height="44"/>
+                    <color key="backgroundColor" red="0.12156862745098039" green="0.58823529411764708" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="WNM-ec-lwy"/>
+                        <constraint firstAttribute="height" constant="44" id="xdg-Wz-OIG"/>
+                    </constraints>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="stepBtn:" destination="-1" eventType="touchUpInside" id="ONr-bv-da0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ILG-A0-YYh" secondAttribute="trailing" id="6gO-MD-1hk"/>
+                <constraint firstItem="ILG-A0-YYh" firstAttribute="top" secondItem="ScY-pM-izk" secondAttribute="bottom" constant="10" id="82e-42-xtJ"/>
+                <constraint firstItem="MXk-n3-0fh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="And-3Y-eSx"/>
+                <constraint firstItem="ILG-A0-YYh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DYB-M7-QJp"/>
+                <constraint firstAttribute="trailing" secondItem="dhA-1S-5tq" secondAttribute="trailing" id="E8U-3N-kgh"/>
+                <constraint firstItem="YkQ-1z-UDT" firstAttribute="top" secondItem="dhA-1S-5tq" secondAttribute="bottom" constant="71" id="KPJ-5o-WL5"/>
+                <constraint firstItem="ScY-pM-izk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="51" id="L0f-Dy-hZf"/>
+                <constraint firstItem="YkQ-1z-UDT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Mv0-WX-nQc"/>
+                <constraint firstItem="dhA-1S-5tq" firstAttribute="top" secondItem="ILG-A0-YYh" secondAttribute="bottom" constant="10" id="Ovg-wo-PU7"/>
+                <constraint firstAttribute="trailing" secondItem="ScY-pM-izk" secondAttribute="trailing" id="Q1Q-a0-Ucz"/>
+                <constraint firstItem="ScY-pM-izk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lTm-M4-h1j"/>
+                <constraint firstItem="dhA-1S-5tq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mwv-4o-cDG"/>
+                <constraint firstAttribute="bottom" secondItem="MXk-n3-0fh" secondAttribute="bottom" constant="48" id="xEq-OG-v9H"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="140" y="145"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="addCateyeStep1" width="130" height="214"/>
+    </resources>
+</document>
