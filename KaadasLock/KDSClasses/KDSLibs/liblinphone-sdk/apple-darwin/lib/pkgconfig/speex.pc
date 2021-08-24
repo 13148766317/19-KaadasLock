@@ -1,0 +1,15 @@
+# libspeex pkg-config source file
+
+prefix=/Users/hu/Documents/linphone/duhao-linphone/duhao-linphone/linphone-iphone/liblinphone-sdk/x86_64-apple-darwin.ios
+exec_prefix=/Users/hu/Documents/linphone/duhao-linphone/duhao-linphone/linphone-iphone/liblinphone-sdk/x86_64-apple-darwin.ios/bin
+libdir=/Users/hu/Documents/linphone/duhao-linphone/duhao-linphone/linphone-iphone/liblinphone-sdk/x86_64-apple-darwin.ios/lib
+includedir=/Users/hu/Documents/linphone/duhao-linphone/duhao-linphone/linphone-iphone/liblinphone-sdk/x86_64-apple-darwin.ios/include
+
+Name: speex
+Description: Speex is an audio codec tuned for speech
+Version: 1.2rc1
+Requires:
+Conflicts:
+Libs: -L/Users/hu/Documents/linphone/duhao-linphone/duhao-linphone/linphone-iphone/liblinphone-sdk/x86_64-apple-darwin.ios/lib -lspeex
+Libs.private: -lm
+Cflags: -I/Users/hu/Documents/linphone/duhao-linphone/duhao-linphone/linphone-iphone/liblinphone-sdk/x86_64-apple-darwin.ios/include

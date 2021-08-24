@@ -1,0 +1,10 @@
+# This is a comment
+prefix=/Users/hu/Documents/linphone/duhao-linphone/duhao-linphone/linphone-iphone/liblinphone-sdk/x86_64-apple-darwin.ios
+exec_prefix=/Users/hu/Documents/linphone/duhao-linphone/duhao-linphone/linphone-iphone/liblinphone-sdk/x86_64-apple-darwin.ios
+
+Name:  bctoolbox
+Description: A common set of tools used by Belledonne Communication's softwares
+Version: 0.6.0
+Libs: -L/Users/hu/Documents/linphone/duhao-linphone/duhao-linphone/linphone-iphone/liblinphone-sdk/x86_64-apple-darwin.ios/lib -lbctoolbox
+Libs.private:  /Users/hu/Documents/linphone/duhao-linphone/duhao-linphone/linphone-iphone/liblinphone-sdk/x86_64-apple-darwin.ios/lib/libmbedtls.a /Users/hu/Documents/linphone/duhao-linphone/duhao-linphone/linphone-iphone/liblinphone-sdk/x86_64-apple-darwin.ios/lib/libmbedx509.a /Users/hu/Documents/linphone/duhao-linphone/duhao-linphone/linphone-iphone/liblinphone-sdk/x86_64-apple-darwin.ios/lib/libmbedcrypto.a
+Cflags: -I/Users/hu/Documents/linphone/duhao-linphone/duhao-linphone/linphone-iphone/liblinphone-sdk/x86_64-apple-darwin.ios/include

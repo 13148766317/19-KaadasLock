@@ -1,0 +1,14 @@
+# pkg-config file from libvpx v1.5.0
+prefix=/Users/hu/Documents/linphone/duhao-linphone/duhao-linphone/linphone-iphone/liblinphone-sdk/x86_64-apple-darwin.ios
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: vpx
+Description: WebM Project VPx codec implementation
+Version: 1.5.0
+Requires:
+Conflicts:
+Libs: -L${libdir} -lvpx -lm
+Libs.private: -lm -lpthread
+Cflags: -I${includedir}
