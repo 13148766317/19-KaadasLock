@@ -1,0 +1,6 @@
+framework module KDSFFmpeg {
+  umbrella header "KDSFFmpeg.h"
+
+  export *
+  module * { export * }
+}

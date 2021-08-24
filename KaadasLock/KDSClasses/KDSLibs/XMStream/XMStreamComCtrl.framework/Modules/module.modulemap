@@ -1,0 +1,6 @@
+framework module XMStreamComCtrl {
+  umbrella header "XMStreamComCtrl.h"
+
+  export *
+  module * { export * }
+}
